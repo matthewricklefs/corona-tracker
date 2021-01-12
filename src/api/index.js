@@ -9,7 +9,7 @@ export const fetchData = async () => {
 
         const modifiedData = { confirmed,recovered, deaths,lastUpdate }
 
-        return { confirmed,recovered, deaths,lastUpdate }
+        return { confirmed, recovered, deaths,lastUpdate }
     } 
     catch (error) {
         
