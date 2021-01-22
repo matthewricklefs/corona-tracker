@@ -14,7 +14,6 @@ export const fetchData = async (country) => {
       data: { confirmed, recovered, deaths, lastUpdate },
     } = await axios.get(changeableUrl);
 
-<<<<<<< HEAD
     return { confirmed, recovered, deaths, lastUpdate };
   } catch (error) {
     console.log(error);
@@ -46,28 +45,3 @@ export const fetchCountries = async () => {
     console.log(error);
   }
 };
-=======
-        return { confirmed, recovered, deaths,lastUpdate }
-    } 
-    catch (error) {
-        
-    }
-}
-
-export const fetchDailyData = async () => {
-    try {
-        const { data } = await axios.get(`${url}/daily`)
-
-        const modifiedData = data.map((dailyData) => ({
-            confirmed: dailyData.confirmed.total,
-            deaths: dailyData.deaths.total,
-            date: dailyData.reportDate,
-        }))
-        
-        return modifiedData;
-
-    } catch (error) {
-        
-    }
-}
->>>>>>> 34eb4b6275e492494df20772a0c65c72c8fcfdd0
