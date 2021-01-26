@@ -1,43 +1,28 @@
-import React from "react";
+import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import { Cards, Chart, CountryPicker } from "./components";
 import styles from "./App.module.css";
-import { fetchData } from "./api";
-import coronaImage from './images/image.png'
+import Navigation from "./components/navigation/navigation-component";
+import Home from "./components/pages/Home";
+import About from "./components/pages/About";
+import Statistics from "./components/pages/Statistics";
 
-class App extends React.Component {
 
-  state = {
-    data: {},
-    country: "",
-  };
-  
-  
+import './styles/navigation.css';
 
-  async componentDidMount() {
-    const fetchedData = await fetchData();
-
-    this.setState({ data: fetchedData });
-  }
-
-  handleCountryChange = async (country) => {
-    const fetchedData = await fetchData(country);
-
-    this.setState({ data: fetchedData, country: country });
-  };
-
+export default class App extends Component {
   render() {
-    const { data, country } = this.state;
-
     return (
       <div className={styles.container}>
-        <img className={styles.image} src={coronaImage} alt="COVID-19"></img>
-        <Cards data={data} />
-        <CountryPicker handleCountryChange={this.handleCountryChange} />
-        <Chart data={data} country={country} />
+        <Router>
+          <Navigation />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/statistics" component={Statistics} />
+          </Switch>
+        </Router>
       </div>
     );
   }
 }
-
-export default App;
