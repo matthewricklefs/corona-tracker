@@ -5,7 +5,7 @@ import {SliderData} from '../picture-carousel/SliderData'
 export default class Home extends Component {
   render() {
     return (
-     <div>
+     <div className="slider-container">
        <ImageSlider slides={SliderData}/>
     </div>
     )
