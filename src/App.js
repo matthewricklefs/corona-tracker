@@ -2,19 +2,18 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Navigation from "./components/navigation/navigation-component";
+
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Statistics from "./components/pages/Statistics";
 
-
-// import './styles/navigation.css';
-import './styles/nav.css'
+import "./styles/nav.css";
 
 export default class App extends Component {
   render() {
     return (
       <div>
-        <Router>
+        <Router>        
           <Navigation />
           <Switch>
             <Route exact path="/" component={Home} />

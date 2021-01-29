@@ -1,0 +1,49 @@
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: black 1px solid;
+  margin-bottom: 21px;
+  padding: 10px;
+}
+.paragraph {
+  color: navy;
+  text-indent: 30px;
+  text-transform: uppercase;
+  border-bottom: black 1px solid;
+  margin-bottom: 21px;
+}
+
+.latest-news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: black 1px solid;
+  margin-bottom: 21px;
+  padding: 10px;
+  background-image: url("https://assets-global.website-files.com/5e3d471e8cf4751833faf0f9/5eba9df78fedcf10827053af_covid-levels-bg.jpg");
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+}
+
+.blog-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 21px;
+}
+
+@media (max-width: 770px) {
+  .blog-wrapper {
+    margin: 2% 0 !important;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+}

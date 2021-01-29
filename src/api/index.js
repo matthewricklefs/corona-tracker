@@ -1,6 +1,9 @@
 import axios from "axios";
 
-const url = "https://covid19.mathdro.id/api";
+//TODO
+// when pushed to Heroku switch from
+const url = "http://localhost:4000";
+// to https:HEROKU APP
 
 export const fetchData = async (country) => {
   let changeableUrl = url;
