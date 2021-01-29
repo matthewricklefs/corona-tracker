@@ -2,6 +2,11 @@ import React from "react";
 import { Card, CardContent, Typography, Grid } from "@material-ui/core";
 import CountUp from "react-countup";
 import "../../styles/statistics.css";
+import today from "../../utils/date";
+
+const formattedDate = new Date(
+  `${today.month}-${today.day}-${today.year}`
+).toDateString();
 
 const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
   if (!confirmed) {
@@ -26,9 +31,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               />
             </Typography>
 
-            <Typography color="textSecondary">
-              {new Date(lastUpdate).toDateString()}
-            </Typography>
+            <Typography color="textSecondary">{formattedDate}</Typography>
             <Typography variant="body2">
               Number of active cases of COVID-19
             </Typography>
@@ -50,9 +53,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               />
             </Typography>
 
-            <Typography color="textSecondary">
-              {new Date(lastUpdate).toDateString()}
-            </Typography>
+            <Typography color="textSecondary">{formattedDate}</Typography>
 
             <Typography variant="body2">
               Number of recoveries from COVID-19
@@ -75,9 +76,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               />
             </Typography>
 
-            <Typography color="textSecondary">
-              {new Date(lastUpdate).toDateString()}
-            </Typography>
+            <Typography color="textSecondary">{formattedDate}</Typography>
 
             <Typography variant="body2">
               Number of deaths caused by COVID-19
