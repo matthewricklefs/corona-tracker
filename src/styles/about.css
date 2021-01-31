@@ -3,15 +3,30 @@
   justify-content: center;
   align-items: center;
   border-bottom: black 1px solid;
-  margin-bottom: 21px;
   padding: 10px;
 }
 .paragraph {
   color: navy;
   text-indent: 30px;
-  text-transform: uppercase;
   border-bottom: black 1px solid;
   margin-bottom: 21px;
+  padding: 25px;
+  font-size: 21px;
+  background: #E4BBBD;
+}
+
+.heading {
+  color: #97268D;
+}
+
+.middle-span {
+  font-size: 42px;
+  background-color: #97268D;
+  color: #D9B2B9;
+  border-radius: 8px;
+  padding: 10px;
+  align-self: center;
+  
 }
 
 .latest-news {
@@ -24,10 +39,12 @@
   background-image: url("https://assets-global.website-files.com/5e3d471e8cf4751833faf0f9/5eba9df78fedcf10827053af_covid-levels-bg.jpg");
   background-repeat: no-repeat;
   background-color: #cccccc;
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   height: 400px;
   width: 100%;
+  font-size: 42px;
 }
 
 .blog-wrapper {

@@ -27,7 +27,7 @@ export default function ImgMediaCard() {
 
   return (
     <div className="page-container">
-      <h1 className="heading">COVID News and Research</h1>
+      <h1 className="heading">COVID Statistics & Research</h1>
       <p className="paragraph">
         Our researchers are working day and night to try and understand COVID
         better. From how COVID spreads, to new symptoms. This is shared with
@@ -35,7 +35,11 @@ export default function ImgMediaCard() {
         have made possible on our News & Research Page.
       </p>
 
-      <div className="latest-news">Latest COVID News & Research</div>
+      <div className="latest-news">
+
+        <span className="middle-span">Latest COVID News & Research</span>
+      
+      </div>
       <div className="blog-wrapper">
         <Card className={classes.root}>
           <CardActionArea>

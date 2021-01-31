@@ -43,7 +43,7 @@ a {
 a {
   margin-left: 15px;
   cursor: pointer;
-  color: teal;
+  color: #E4BBBD;
   transition: 0.5s ease-in-out;
 }
 
@@ -56,7 +56,7 @@ a:hover {
 }
 
 a:hover {
-  color: teal;
+  color: #97268D;
 }
 
 @media all and (max-width: 768px) {
