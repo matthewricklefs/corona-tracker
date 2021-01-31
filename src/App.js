@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Navigation from "./components/navigation/navigation-component";
+import FooterComponent from './components/footer/footer-component'
 
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
@@ -20,6 +21,7 @@ export default class App extends Component {
             <Route path="/about" component={About} />
             <Route path="/statistics" component={Statistics} />
           </Switch>
+          <FooterComponent />
         </Router>
       </div>
     );

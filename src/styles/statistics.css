@@ -6,6 +6,20 @@
   grid-gap: 42px;
 }
 
+.graph-section {
+  display: flex;
+  flex-direction: column;
+  margin: 21px;
+  align-items: center;
+  padding: 30px;
+}
+
+.chartjs-size-monitor {
+  position: fixed;
+  height: 75%;
+  padding: 30px;
+}
+
 .covid-image {
   display: flex;
   justify-self: center;
@@ -19,15 +33,15 @@
 }
 
 .infected {
-  border-bottom: 10px solid rgb(42,196,207);
+  border-bottom: 10px solid rgb(42, 196, 207);
 }
 
 .recovered {
-  border-bottom: 10px solid rgb(227,187,189);
+  border-bottom: 10px solid rgb(227, 187, 189);
 }
 
 .deaths {
-  border-bottom: 10px solid rgb(154,1,86);
+  border-bottom: 10px solid rgb(154, 1, 86);
 }
 
 /* Country Picker Styles */
@@ -37,15 +51,6 @@
 }
 
 /* Mobile Responsiveness */
-@media (max-width: 770px) {
-  .container {
-      width: 100%;
-  }
-
-  .image {
-      width: 100%;
-  }
-}
 
 @media (max-width: 770px) {
   .card {
@@ -53,7 +58,24 @@
   }
 
   .image {
-      width: 100%;
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  .graph-section {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 2% 0 !important;
+  }
+
+  .chartjs-size-monitor {
+    margin: 2% 0 !important;
   }
 }
-

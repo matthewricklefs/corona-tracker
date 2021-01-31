@@ -1,0 +1,75 @@
+.footer {
+  background: #044766;
+  color: #11122b;
+  font-family: 'Titillium Web', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+  margin-top: 50px;
+}
+
+.footer .logo-footer img {
+  width: 120px;
+  height: 80%;
+  filter: brightness(50%);
+  
+
+}
+
+.footer .footer-phone-hours span {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1em;
+  letter-spacing: 2px;
+}
+
+.footer .footer-phone-hours .hours {
+  font-size: 0.8em;
+  color: #FEF57D;
+  text-transform: uppercase;
+}
+
+.footer .links-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.footer .social-media-icons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+}
+
+.footer .social-media-icons-wrapper a {
+font-size: 1.5em;
+color: #97268D;
+transition: 0.5s;
+margin-left: 15px;
+}
+.footer .social-media-icons-wrapper a:hover {
+  font-size: 1.5em;
+  color: #FEF57D;
+  transition: 0.5s;
+  margin-left: 15px;
+}
+
+.footer .copyright-wrapper {
+  margin-bottom: 0.7em;
+  margin-bottom: 42px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 770px) {
+  .footer {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+}
