@@ -1,9 +1,9 @@
 import axios from "axios";
-import today from '../utils/date'
+import today from "../utils/date";
 
 // TODO
 // when pushed to Heroku switch from
-const url = "http://localhost:4000";
+const url = "https://bottega-corona-express-mjr.herokuapp.com/";
 // to https:HEROKU APP
 
 export const fetchData = async (country) => {
@@ -26,7 +26,9 @@ export const fetchData = async (country) => {
 
 export const fetchDailyData = async () => {
   try {
-    const { data } = await axios.get(`${url}/daily/${today.month}-${today.day}-${today.year}`);
+    const { data } = await axios.get(
+      `${url}/daily/${today.month}-${today.day}-${today.year}`
+    );
 
     const modifiedData = data.map((dailyData) => ({
       confirmed: dailyData.confirmed.total,
