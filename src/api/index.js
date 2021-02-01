@@ -3,7 +3,7 @@ import today from "../utils/date";
 
 // TODO
 // when pushed to Heroku switch from
-const url = "https://bottega-corona-express-mjr.herokuapp.com/";
+const url = "https://bottega-corona-express-mjr.herokuapp.com";
 // to https:HEROKU APP
 
 export const fetchData = async (country) => {
