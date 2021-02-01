@@ -1,6 +1,5 @@
 /* Statistics Styles */
 .statistics-container {
-  height: 600px;
   margin-bottom: 59px;
   display: grid;
   grid-gap: 42px;
@@ -70,12 +69,17 @@
 
   .graph-section {
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
     margin: 2% 0 !important;
   }
 
   .chartjs-size-monitor {
     margin: 2% 0 !important;
+  }
+
+  .statistics-container {
+    margin-bottom: 59px;
+    display: grid;
+    grid-gap: 42px;
   }
 }
